@@ -1,0 +1,11 @@
+---------------------------------------------------------------
+SUM START:0 LENGTH:12035 LOCCTR:12035
+SYMBOL TABLE
+NAME: COUNT Address: 29 IsRelative: 1
+NAME: FIRST Address: 0 IsRelative: 1
+NAME: LOOP Address: 10 IsRelative: 1
+NAME: TABLE Address: 32 IsRelative: 1
+NAME: TABLE2 Address: 6032 IsRelative: 1
+NAME: TOTAL Address: 12032 IsRelative: 1
+
+LITERAL TABLE
