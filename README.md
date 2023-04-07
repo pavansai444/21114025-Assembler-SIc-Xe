@@ -22,7 +22,7 @@ This project implements an assembler that supports SIC/XE instructions. The asse
 -	 Listing_File.txt containing the object codes.
 -	 errors.txt contains the errors In pass1 and pass2 respectively.
 -	 ”output.txt” contains the object program of the SIC/XE.
-'''console
+'''cpp
 g++ assembler.cpp -o assembler
 ./assembler
 '''
