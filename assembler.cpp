@@ -668,13 +668,16 @@ if(temp[0]!='.'){
     int len=s.length();
     for(int i=0;i<len-1;i++){
         if(s[i+1]=='+' || s[i+1]=='-' || s[i+1]=='*' || s[i+1]=='/'){
+            len++;
              s.insert(i+1,1,' ');i++;
         }
     }
     bool fk=false;
-    for(int i=0;i<s.length()-1;i++){
+    len=s.length();
+    for(int i=0;i<len-1;i++){
     if(s[i]==',' && s[i+1]!=' '){
-        s.insert(i+1,1,' ');
+        len++;
+        s.insert(i+1,1,' ');i++;
     }
     }
     str=s;
@@ -1637,7 +1640,7 @@ while(getline(in,tempstr)){
         error=true;
         ferror<<"ERROR LINE:"<<line<<" used "<<label<<" with length more than 6\n";
     }
-    // cout<<obj_code<<"\n";
+    cout<<obj_code<<"\n";
     LFile<<obj_code<<"\n";
 
 }
