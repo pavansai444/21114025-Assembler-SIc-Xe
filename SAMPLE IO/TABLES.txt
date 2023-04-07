@@ -1,0 +1,30 @@
+---------------------------------------------------------------
+COPY START:0 LENGTH:4147 LOCCTR:4147
+SYMBOL TABLE
+NAME: BUFEND Address: 4147 IsRelative: 0
+NAME: BUFFER Address: 51 IsRelative: 1
+NAME: CLOOP Address: 3 IsRelative: 1
+NAME: ENDFIL Address: 23 IsRelative: 1
+NAME: FIRST Address: 0 IsRelative: 1
+NAME: LENGTH Address: 45 IsRelative: 1
+NAME: MAXLEN Address: 4096 IsRelative: 0
+NAME: RETADR Address: 42 IsRelative: 1
+
+LITERAL TABLE
+NAME:454F46  VALUE: 454F46    ADDRESS: 48    WRITE: 0
+---------------------------------------------------------------
+RDREC START:0 LENGTH:43 LOCCTR:43
+SYMBOL TABLE
+NAME: EXIT Address: 32 IsRelative: 1
+NAME: INPUT Address: 39 IsRelative: 1
+NAME: MAXLEN Address: 40 IsRelative: 1
+NAME: RLOOP Address: 9 IsRelative: 1
+
+LITERAL TABLE
+---------------------------------------------------------------
+WRREC START:0 LENGTH:28 LOCCTR:28
+SYMBOL TABLE
+NAME: WLOOP Address: 6 IsRelative: 1
+
+LITERAL TABLE
+NAME:05  VALUE: 05    ADDRESS: 27    WRITE: 0
