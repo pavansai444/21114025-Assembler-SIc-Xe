@@ -22,10 +22,10 @@ This project implements an assembler that supports SIC/XE instructions. The asse
 -	 Listing_File.txt containing the object codes.
 -	 errors.txt contains the errors In pass1 and pass2 respectively.
 -	 ”output.txt” contains the object program of the SIC/XE.
-'''cpp
+```console
 g++ assembler.cpp -o assembler
 ./assembler
-'''
+```
 
 # Working of Assembler
 -	The Input is preprocessed by preprocess.txt which removes comments, white spaces, and converts the input.txt to preprocess.txt.
