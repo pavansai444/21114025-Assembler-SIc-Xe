@@ -1020,12 +1020,20 @@ while(getline(in,tempstr)){
         //dumping records of a control section
         ou<<H<<"\n";
         for(auto i:D)   ou<<i<<"\n";
+        if(tempD.length()!=0)ou<<tempD<<"\n";        
         for(auto i:R)   ou<<i<<"\n";
+        if(tempR.length()!=0)ou<<tempR<<"\n";
         for(auto i:T)   ou<<i<<"\n";
-        if(tempT.length()!=0)ou<<tempT<<"\n";
+        if(tempT.length()!=0){int va901=tempT.length()-7;va901/=2;
+                string h902=convertDecToHex(va901);
+                changeString(h902,2);
+                tempT.insert(7,1,h902[0]);
+                tempT.insert(8,1,h902[1]);
+                ou<<tempT<<"\n";
+                }
         for(auto i:M)   ou<<i<<"\n";
         ou<<E<<"\n";
-        H.clear();T.clear();D.clear();R.clear();M.clear();E.clear();
+        H.clear();T.clear();D.clear();R.clear();M.clear();E.clear();tempD.clear();tempT.clear();tempM.clear();tempR.clear();
         locctr=0;     
         csect_name=label;
         if(operand.length()!=0)ferror<<"ERROR LINE:"<<line<<" expected no operand for CSECT \n";
@@ -1086,12 +1094,22 @@ while(getline(in,tempstr)){
             }
             ou<<H<<"\n";
             for(auto i:D)   ou<<i<<"\n";
+            if(tempD.length()!=0)ou<<tempD<<"\n";
             for(auto i:R)   ou<<i<<"\n";
+            if(tempR.length()!=0)ou<<tempR<<"\n";
             for(auto i:T)   ou<<i<<"\n";
-            if(tempT.length()!=0)ou<<tempT<<"\n";
+            if(tempT.length()!=0){
+                int va901=tempT.length()-7;va901/=2;
+                string h902=convertDecToHex(va901);
+                changeString(h902,2);
+                tempT.insert(7,1,h902[0]);
+                tempT.insert(8,1,h902[1]);
+                ou<<tempT<<"\n";
+                }
             for(auto i:M)   ou<<i<<"\n";
             ou<<E<<"\n";         
             LFile<<obj_code<<"\n";
+            H.clear();T.clear();D.clear();R.clear();M.clear();E.clear();tempD.clear();tempT.clear();tempM.clear();tempR.clear();
             return;//successfully completed pass 2
         }else if(OP_TAB[opcode].exists){
             curr=locctr;string tObj="";
